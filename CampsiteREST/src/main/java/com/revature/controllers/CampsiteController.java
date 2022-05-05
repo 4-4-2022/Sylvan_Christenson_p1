@@ -1,7 +1,5 @@
 package com.revature.controllers;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,10 +40,15 @@ public class CampsiteController {
 
 	}
 
-	@RequestMapping(value = "/update/{id}", produces = "application/json", method = RequestMethod.PUT)
+	//@RequestMapping(value = "/update/{id}", produces = "application/json", method = RequestMethod.PUT)
+	@PostMapping("/update/{id}")
 	public Campsite updateCampsite(@PathVariable Long id, @RequestBody Campsite newCampsite) {
-		newCampsite.setId(id);
-		return campsiteService.save(newCampsite);
+		return campsiteService.update(newCampsite);
+
+	}
+	@RequestMapping(value = "/delete/{id}")
+	public void deleteCampsite(@PathVariable Long id) {
+		campsiteService.delete(id);
 
 	}
 }

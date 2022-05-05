@@ -3,7 +3,6 @@ package com.revature.models;
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.revature.entities.Campsite;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Campsite {
 	private long id;
