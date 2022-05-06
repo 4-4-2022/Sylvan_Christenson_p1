@@ -22,7 +22,7 @@ This API is setup to handle the creation and management of
 ------------------------------
 Reservations Functionality
 ------------------------------
-Save a new Reservation 
+**Save a new Reservation** 
     -url: http://localhost:6060/reservations/save
     -RequestBody: {
                    "reservationId": 2,
@@ -32,14 +32,14 @@ Save a new Reservation
                    "departureDate": "01012022"
                    }
                   
-Find Reservation by Reservation ID
+**Find Reservation by Reservation ID**
     -url: http://localhost:6060/reservations?id=2
     -Request Parameter: ?
     
-Find all Reservations
+**Find all Reservations**
     -url: http://localhost:6060/reservations/all
     
-Update Reservation by Reservation ID
+**Update Reservation by Reservation ID**
     -url: http://localhost:6060/reservations/update?id=?
     -Request Parameter: ?
     -RequestBody: {
@@ -50,28 +50,28 @@ Update Reservation by Reservation ID
                    "departureDate": "01012022"
                    }
                    
-Delete Reservation by Reservation ID
+**Delete Reservation by Reservation ID**
     -url: http://localhost:6060/campsites/delete?id=?
     -Request Parameter: ?
     
 ------------------------------
 Campsites Functionality
 ------------------------------
-Save a new Campsite 
+**Save a new Campsite **
     -url: http://localhost:6060/campsites/save
     -RequestBody:{
                   "id": 5,
                   "name": "Amantacha",
                   "location": "West Side"
                   }
-Find Campsite by Campsite ID
+**Find Campsite by Campsite ID**
     -url: http://localhost:6060/campsites?id=?
     -Request Parameter: ?
     
-Find all Campsites
+**Find all Campsites**
     -url: http://localhost:6060/campsites/all
     
-Update Campsite by Campsite ID
+**Update Campsite by Campsite ID**
     -url: http://localhost:6060/campsites/update?id=?
     -Request Parameter: ?
     -RequestBody:{
@@ -80,7 +80,7 @@ Update Campsite by Campsite ID
                   "location": "West Side"
                   }
                   
-Delete Campsite by Campsite ID
+**Delete Campsite by Campsite ID**
     -url: http://localhost:6060/campsites/delete?id=?
     -Request Parameter: ?   
     
@@ -88,18 +88,18 @@ Delete Campsite by Campsite ID
 Accounts Functionality
 ------------------------------
 
-Find All Accounts
+**Find All Accounts**
     -url: http://localhost:6060/accounts/all
-Save Account
+**Save Account**
     -url: http://localhost:6060/accounts/save
     -RequestBody: {
                    "id": 6,
                    "name": "Sylvan"
                    }
-  Delete Account by Account ID  
+  **Delete Account by Account ID  **
       -url: http://localhost:6060/accounts/delete?id=?
       -Request Parameter: ?
-  Update Account 
+ ** Update Account **
       -url: http://localhost:6060/accounts/update
       -RequestBody: {
                    "id": 6,
