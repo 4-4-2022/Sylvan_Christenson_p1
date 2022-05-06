@@ -85,9 +85,9 @@ Campsites Functionality
     
 **Update Campsite by Campsite ID**
 
-   -url: http://localhost:6060/campsites/update?id=?
-   -Request Parameter: ?
-   -RequestBody:{
+    -url: http://localhost:6060/campsites/update?id=?
+    -Request Parameter: ?
+    -RequestBody:{
                   "id": 5,
                   "name": "Amantacha",
                   "location": "West Side"
@@ -95,8 +95,8 @@ Campsites Functionality
                   
 **Delete Campsite by Campsite ID**
 
-   -url: http://localhost:6060/campsites/delete?id=?
-   -Request Parameter: ?
+    -url: http://localhost:6060/campsites/delete?id=?
+    -Request Parameter: ?
    
    
 Accounts Functionality
