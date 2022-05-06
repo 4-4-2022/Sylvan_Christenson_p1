@@ -102,6 +102,11 @@ Campsites Functionality
 Accounts Functionality
 ======================
 
+**Find Account by Account ID**
+    
+    -url: http://localhost:6060/accounts/find?id=?
+    -Request Parameter: ?
+
 **Find All Accounts**
     
     -url: http://localhost:6060/accounts/all
