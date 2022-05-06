@@ -4,14 +4,14 @@ Campsite Availability REST API
 ==============================
 
 This API is setup to handle the creation and management of
--Campsites
+**-Campsites**
     -id
     -name
     -location
--Accounts
+**-Accounts**
     -id
     -name
--Reservations
+**-Reservations**
     -reservationId
     -accountId
     -campsiteId
