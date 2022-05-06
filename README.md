@@ -19,9 +19,9 @@ This API is setup to handle the creation and management of
     -arrivalDate
     -departureDate
     
-------------------------------
+
 Reservations Functionality
-------------------------------
+=============================
 **Save a new Reservation** 
     -url: http://localhost:6060/reservations/save
     -RequestBody: {
@@ -54,9 +54,9 @@ Reservations Functionality
     -url: http://localhost:6060/campsites/delete?id=?
     -Request Parameter: ?
     
-------------------------------
+
 Campsites Functionality
-------------------------------
+=======================
 **Save a new Campsite **
     -url: http://localhost:6060/campsites/save
     -RequestBody:{
@@ -84,9 +84,9 @@ Campsites Functionality
     -url: http://localhost:6060/campsites/delete?id=?
     -Request Parameter: ?   
     
-------------------------------
+
 Accounts Functionality
-------------------------------
+======================
 
 **Find All Accounts**
     -url: http://localhost:6060/accounts/all
