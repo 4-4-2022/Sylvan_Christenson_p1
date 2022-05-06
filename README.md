@@ -1,4 +1,3 @@
-/# Sylvan_Christenson_p1
 
 Campsite Availability REST API
 ==============================
