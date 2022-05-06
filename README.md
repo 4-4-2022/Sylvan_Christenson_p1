@@ -22,6 +22,7 @@ This API is setup to handle the creation and management of
 
 Reservations Functionality
 =============================
+
 **Save a new Reservation** 
     -url: http://localhost:6060/reservations/save
     -RequestBody: {
@@ -57,7 +58,8 @@ Reservations Functionality
 
 Campsites Functionality
 =======================
-**Save a new Campsite **
+
+**Save New Campsite**
     -url: http://localhost:6060/campsites/save
     -RequestBody:{
                   "id": 5,
@@ -96,10 +98,12 @@ Accounts Functionality
                    "id": 6,
                    "name": "Sylvan"
                    }
-  **Delete Account by Account ID  **
+  **Delete Account by Account ID**
+  
       -url: http://localhost:6060/accounts/delete?id=?
       -Request Parameter: ?
- ** Update Account **
+
+**Update Account**
       -url: http://localhost:6060/accounts/update
       -RequestBody: {
                    "id": 6,
