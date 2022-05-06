@@ -113,7 +113,7 @@ Accounts Functionality
                    "id": 6,
                    "name": "Sylvan"
                    }
-  **Delete Account by Account ID**
+**Delete Account by Account ID**
   
      -url: http://localhost:6060/accounts/delete?id=?
      -Request Parameter: ?
