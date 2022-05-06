@@ -75,7 +75,7 @@ Campsites Functionality
                   "location": "West Side"
                   }
 **Find Campsite by Campsite ID**
-    
+
     -url: http://localhost:6060/campsites?id=?
     -Request Parameter: ?
     
@@ -83,9 +83,8 @@ Campsites Functionality
     
     -url: http://localhost:6060/campsites/all
     
-    
 **Update Campsite by Campsite ID**
-   
+
    -url: http://localhost:6060/campsites/update?id=?
    -Request Parameter: ?
    -RequestBody:{
@@ -93,14 +92,11 @@ Campsites Functionality
                   "name": "Amantacha",
                   "location": "West Side"
                   }
-      
-      
 **Delete Campsite by Campsite ID**
-   
-   -url: http://localhost:6060/campsites/delete?id=?
-   -Request Parameter: ?   
-    
 
+   -url: http://localhost:6060/campsites/delete?id=?
+   -Request Parameter: ?
+   
 Accounts Functionality
 ======================
 
