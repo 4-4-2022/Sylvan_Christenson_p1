@@ -1,4 +1,4 @@
-# Sylvan_Christenson_p1
+/# Sylvan_Christenson_p1
 
 Campsite Availability REST API
 ==============================
@@ -6,13 +6,16 @@ Campsite Availability REST API
 This API is setup to handle the creation and management of
 ----------------------------------------------------------
 **-Campsites**
+    
     -id
     -name
     -location
 **-Accounts**
+   
     -id
     -name
 **-Reservations**
+  
     -reservationId
     -accountId
     -campsiteId
@@ -24,6 +27,7 @@ Reservations Functionality
 =============================
 
 **Save a new Reservation** 
+
     -url: http://localhost:6060/reservations/save
     -RequestBody: {
                    "reservationId": 2,
@@ -34,13 +38,16 @@ Reservations Functionality
                    }
                   
 **Find Reservation by Reservation ID**
+
     -url: http://localhost:6060/reservations?id=2
     -Request Parameter: ?
-    
+   
 **Find all Reservations**
+
     -url: http://localhost:6060/reservations/all
     
 **Update Reservation by Reservation ID**
+
     -url: http://localhost:6060/reservations/update?id=?
     -Request Parameter: ?
     -RequestBody: {
@@ -52,6 +59,7 @@ Reservations Functionality
                    }
                    
 **Delete Reservation by Reservation ID**
+
     -url: http://localhost:6060/campsites/delete?id=?
     -Request Parameter: ?
     
@@ -60,6 +68,7 @@ Campsites Functionality
 =======================
 
 **Save New Campsite**
+
     -url: http://localhost:6060/campsites/save
     -RequestBody:{
                   "id": 5,
@@ -67,14 +76,17 @@ Campsites Functionality
                   "location": "West Side"
                   }
 **Find Campsite by Campsite ID**
+    
     -url: http://localhost:6060/campsites?id=?
     -Request Parameter: ?
     
 **Find all Campsites**
+    
     -url: http://localhost:6060/campsites/all
     
 **Update Campsite by Campsite ID**
-    -url: http://localhost:6060/campsites/update?id=?
+   
+   -url: http://localhost:6060/campsites/update?id=?
     -Request Parameter: ?
     -RequestBody:{
                   "id": 5,
@@ -83,7 +95,8 @@ Campsites Functionality
                   }
                   
 **Delete Campsite by Campsite ID**
-    -url: http://localhost:6060/campsites/delete?id=?
+   
+   -url: http://localhost:6060/campsites/delete?id=?
     -Request Parameter: ?   
     
 
@@ -91,9 +104,12 @@ Accounts Functionality
 ======================
 
 **Find All Accounts**
+    
     -url: http://localhost:6060/accounts/all
+    
 **Save Account**
-    -url: http://localhost:6060/accounts/save
+   
+   -url: http://localhost:6060/accounts/save
     -RequestBody: {
                    "id": 6,
                    "name": "Sylvan"
@@ -104,7 +120,8 @@ Accounts Functionality
       -Request Parameter: ?
 
 **Update Account**
-      -url: http://localhost:6060/accounts/update
+     
+     -url: http://localhost:6060/accounts/update
       -RequestBody: {
                    "id": 6,
                    "name": "Sylvan"
