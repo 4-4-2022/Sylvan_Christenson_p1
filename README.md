@@ -4,6 +4,7 @@ Campsite Availability REST API
 ==============================
 
 This API is setup to handle the creation and management of
+----------------------------------------------------------
 **-Campsites**
     -id
     -name
