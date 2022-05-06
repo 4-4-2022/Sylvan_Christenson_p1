@@ -87,8 +87,8 @@ Campsites Functionality
 **Update Campsite by Campsite ID**
    
    -url: http://localhost:6060/campsites/update?id=?
-    -Request Parameter: ?
-    -RequestBody:{
+   -Request Parameter: ?
+   -RequestBody:{
                   "id": 5,
                   "name": "Amantacha",
                   "location": "West Side"
@@ -97,7 +97,7 @@ Campsites Functionality
 **Delete Campsite by Campsite ID**
    
    -url: http://localhost:6060/campsites/delete?id=?
-    -Request Parameter: ?   
+   -Request Parameter: ?   
     
 
 Accounts Functionality
@@ -110,19 +110,19 @@ Accounts Functionality
 **Save Account**
    
    -url: http://localhost:6060/accounts/save
-    -RequestBody: {
+   -RequestBody: {
                    "id": 6,
                    "name": "Sylvan"
                    }
   **Delete Account by Account ID**
   
-      -url: http://localhost:6060/accounts/delete?id=?
-      -Request Parameter: ?
+     -url: http://localhost:6060/accounts/delete?id=?
+     -Request Parameter: ?
 
 **Update Account**
      
      -url: http://localhost:6060/accounts/update
-      -RequestBody: {
+     -RequestBody: {
                    "id": 6,
                    "name": "Sylvan"
                    }
