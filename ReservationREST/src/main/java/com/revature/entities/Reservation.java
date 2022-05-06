@@ -11,6 +11,8 @@ public class Reservation {
 	private long reservationId;
 	private long accountId;
 	private long campsiteId;
+	private long arrivalDate;
+	private long departureDate;
 	public long getReservationId() {
 		return reservationId;
 	}
@@ -29,9 +31,21 @@ public class Reservation {
 	public void setCampsiteId(long campsiteId) {
 		this.campsiteId = campsiteId;
 	}
+	public long getArrivalDate() {
+		return arrivalDate;
+	}
+	public void setArrivalDate(long arrivalDate) {
+		this.arrivalDate = arrivalDate;
+	}
+	public long getDepartureDate() {
+		return departureDate;
+	}
+	public void setDepartureDate(long departureDate) {
+		this.departureDate = departureDate;
+	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(accountId, campsiteId, reservationId);
+		return Objects.hash(accountId, arrivalDate, campsiteId, departureDate, reservationId);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -42,18 +56,21 @@ public class Reservation {
 		if (getClass() != obj.getClass())
 			return false;
 		Reservation other = (Reservation) obj;
-		return accountId == other.accountId && campsiteId == other.campsiteId && reservationId == other.reservationId;
+		return accountId == other.accountId && arrivalDate == other.arrivalDate && campsiteId == other.campsiteId
+				&& departureDate == other.departureDate && reservationId == other.reservationId;
 	}
 	@Override
 	public String toString() {
 		return "Reservation [reservationId=" + reservationId + ", accountId=" + accountId + ", campsiteId=" + campsiteId
-				+ "]";
+				+ ", arrivalDate=" + arrivalDate + ", departureDate=" + departureDate + "]";
 	}
-	public Reservation(long reservationId, long accountId, long campsiteId) {
+	public Reservation(long reservationId, long accountId, long campsiteId, long arrivalDate, long departureDate) {
 		super();
 		this.reservationId = reservationId;
 		this.accountId = accountId;
 		this.campsiteId = campsiteId;
+		this.arrivalDate = arrivalDate;
+		this.departureDate = departureDate;
 	}
 	public Reservation() {
 		super();

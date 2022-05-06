@@ -25,7 +25,7 @@ public class CampsiteController {
 	public List<Campsite> getCampsites() {
 
 		return campsiteService.getCampsites();
-	
+
 	}
 
 	@GetMapping("/{id}")
@@ -40,12 +40,12 @@ public class CampsiteController {
 
 	}
 
-	//@RequestMapping(value = "/update/{id}", produces = "application/json", method = RequestMethod.PUT)
 	@PostMapping("/update/{id}")
 	public Campsite updateCampsite(@PathVariable Long id, @RequestBody Campsite newCampsite) {
 		return campsiteService.update(newCampsite);
 
 	}
+
 	@RequestMapping(value = "/delete/{id}")
 	public void deleteCampsite(@PathVariable Long id) {
 		campsiteService.delete(id);

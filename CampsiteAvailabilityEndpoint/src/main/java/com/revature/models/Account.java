@@ -1,12 +1,10 @@
-package com.revature.dto;
+package com.revature.models;
 
 import java.util.Objects;
 
-import javax.persistence.Id;
-
-import com.revature.models.Account;
-
-public class AccountDTO {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Account {
 
 	private long id;
 	private String name;
@@ -49,14 +47,15 @@ public class AccountDTO {
 		return "Account [id=" + id + ", name=" + name + "]";
 	}
 
-	public AccountDTO(long id, String name) {
+	public Account(long id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
 
-	public AccountDTO() {
+	public Account() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
 }
