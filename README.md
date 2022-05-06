@@ -124,6 +124,7 @@ Accounts Functionality
      -Request Parameter: ?
      
  **Update Account**
+ 
     -url: http://localhost:6060/accounts/update
     -RequestBody: {
                    "id": 6,
