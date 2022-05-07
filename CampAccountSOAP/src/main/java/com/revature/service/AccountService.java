@@ -1,7 +1,6 @@
 package com.revature.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -17,9 +16,17 @@ public class AccountService {
 	AccountRepository accountRepo;
 
 	@WebMethod
-	public Optional<Account> findAccountById(Long id) {
-
-		return this.accountRepo.findById(id);
+	public Account findAccountById(Long id) {
+		Account noAccount = new Account();
+		for(Account account: this.accountRepo.findAll()) {
+			if(account.getId() == id) {
+				return account;
+			}
+			
+		}
+		return null;
+		
+		
 	}
 
 	@WebMethod

@@ -15,8 +15,9 @@ import com.revature.models.Account;
 public interface AccountService {
 	
 	@WebMethod
+	public Account findAccountById(Long id);
+	@WebMethod
 	public List<Account> findAllAccounts();
-	
 	@WebMethod
 	public Account saveAccount(Account account);
 	@WebMethod

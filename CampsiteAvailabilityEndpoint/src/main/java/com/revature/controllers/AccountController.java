@@ -18,6 +18,11 @@ public class AccountController {
 
 	@Autowired
 	private AccountService accountService;
+	
+	@GetMapping("/accounts/find")
+	public Account findAccountById(@RequestParam long id) {
+		return this.accountService.findAccountById(id);
+	}
 
 	@GetMapping("/accounts/all")
 	public List<Account> getAccounts() {
