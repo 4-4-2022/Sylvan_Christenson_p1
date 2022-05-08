@@ -43,17 +43,29 @@ Reservations Functionality
 
 -url: http://localhost:6060/reservations?id=?
 
--Request Parameter: ?
+-Request Parameter: Reservation ID (Integer)
    
 **Find all Reservations**
 
 -url: http://localhost:6060/reservations/all
-    
+
+**Find all Reservations by Campsite ID**
+
+-url: http://localhost:6060/reservations/date?date=?????????
+
+-Request Parameter: ddmmyyy(Integer)
+
+**Find all Reservations by Campsite ID**
+
+-url: http://localhost:6060/reservations/campsite?id=?
+
+-Request Parameter: Campsite ID (Integer)
+
 **Update Reservation by Reservation ID**
 
 -url: http://localhost:6060/reservations/update?id=?
 
--Request Parameter: ?
+-Request Parameter: Reservation ID (Integer)
 
 -RequestBody:
 
@@ -69,7 +81,7 @@ Reservations Functionality
 
 -url: http://localhost:6060/campsites/delete?id=?
 
--Request Parameter: ?
+-Request Parameter: Reservation ID (Integer)
     
 
 Campsites Functionality
@@ -91,7 +103,7 @@ Campsites Functionality
 
 -url: http://localhost:6060/campsites?id=?
 
--Request Parameter: ?
+-Request Parameter: Campsite ID (Integer)
     
 **Find all Campsites**
 
@@ -101,7 +113,7 @@ Campsites Functionality
 
 -url: http://localhost:6060/campsites/update?id=?
 
--Request Parameter: ?
+-Request Parameter: Campsite ID (Integer)
 
 -RequestBody:
 
@@ -115,7 +127,7 @@ Campsites Functionality
 
 -url: http://localhost:6060/campsites/delete?id=?
 
--Request Parameter: ?
+-Request Parameter: Campsite ID (Integer)
    
    
 Accounts Functionality
@@ -124,7 +136,7 @@ Accounts Functionality
 **Find Account by Account ID**
 
 -url: http://localhost:6060/accounts/find?id=?
--Request Parameter: ?
+-Request Parameter: Account ID (Integer)
 
 **Find All Accounts**
 
@@ -145,7 +157,7 @@ Accounts Functionality
 
 -url: http://localhost:6060/accounts/delete?id=?
 
--Request Parameter: ?
+-Request Parameter: Account ID (Integer)
      
  **Update Account**
  
@@ -157,3 +169,15 @@ Accounts Functionality
     "id": 6,
     "name": "Sylvan"
     }
+    
+Availability Functionality
+======================
+
+**Find Availability by Campsite ID**
+
+-url: http://localhost:6060/accounts/availability?id=?
+
+-Request Parameter: Campsite ID (Integer)
+
+
+
