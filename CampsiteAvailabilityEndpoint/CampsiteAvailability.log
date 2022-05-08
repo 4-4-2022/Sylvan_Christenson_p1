@@ -1,0 +1,338 @@
+16:03:27.871 [restartedMain] INFO  com.revature.RestConsumerApplication - Starting RestConsumerApplication using Java 17.0.2 on Snoss with PID 21752 (C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint\target\classes started by admin in C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint)
+16:03:27.871 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+16:03:27.873 [restartedMain] INFO  com.revature.RestConsumerApplication - No active profile set, falling back to 1 default profile: "default"
+16:03:27.904 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:03:27.904 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:03:28.449 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8de184d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:03:28.471 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+16:03:28.646 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 6060 (http)
+16:03:28.653 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6060"]
+16:03:28.653 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:03:28.653 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16:03:28.705 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:03:28.705 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 800 ms
+16:03:29.042 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://service.revature.com/}AccountServiceService from WSDL: http://localhost:7070/soap-service/account-service?wsdl
+16:03:29.264 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loggingAspect': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.revature.util.LoggingAspect] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ef5c174]
+16:03:29.266 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:03:29.276 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:03:29.293 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loggingAspect': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.revature.util.LoggingAspect] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ef5c174]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.revature.RestConsumerApplication.main(RestConsumerApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.revature.util.LoggingAspect] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ef5c174]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: JoinPoint
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: JoinPoint
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 29 common frames omitted
+16:03:38.643 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+16:03:38.645 [restartedMain] INFO  com.revature.RestConsumerApplication - Starting RestConsumerApplication using Java 17.0.2 on Snoss with PID 23416 (C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint\target\classes started by admin in C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint)
+16:03:38.645 [restartedMain] INFO  com.revature.RestConsumerApplication - No active profile set, falling back to 1 default profile: "default"
+16:03:38.676 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:03:38.676 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:03:39.233 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2191b46a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:03:39.256 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+16:03:39.430 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 6060 (http)
+16:03:39.437 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6060"]
+16:03:39.437 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:03:39.437 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16:03:39.491 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:03:39.491 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 814 ms
+16:03:39.826 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://service.revature.com/}AccountServiceService from WSDL: http://localhost:7070/soap-service/account-service?wsdl
+16:03:40.049 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loggingAspect': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.revature.util.LoggingAspect] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@54f97034]
+16:03:40.051 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:03:40.060 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:03:40.073 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loggingAspect': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.revature.util.LoggingAspect] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@54f97034]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.revature.RestConsumerApplication.main(RestConsumerApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.revature.util.LoggingAspect] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@54f97034]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: JoinPoint
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: JoinPoint
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 29 common frames omitted
+16:04:11.947 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+16:04:11.949 [restartedMain] INFO  com.revature.RestConsumerApplication - Starting RestConsumerApplication using Java 17.0.2 on Snoss with PID 2388 (C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint\target\classes started by admin in C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint)
+16:04:11.950 [restartedMain] INFO  com.revature.RestConsumerApplication - No active profile set, falling back to 1 default profile: "default"
+16:04:11.981 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:04:11.981 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:04:12.540 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$11c1b78f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:04:12.562 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+16:04:12.734 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 6060 (http)
+16:04:12.740 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6060"]
+16:04:12.740 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:04:12.740 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16:04:12.794 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:04:12.795 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 814 ms
+16:04:13.124 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://service.revature.com/}AccountServiceService from WSDL: http://localhost:7070/soap-service/account-service?wsdl
+16:04:13.349 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loggingAspect': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.revature.util.LoggingAspect] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ef5c174]
+16:04:13.351 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:04:13.359 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:04:13.373 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loggingAspect': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.revature.util.LoggingAspect] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ef5c174]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.revature.RestConsumerApplication.main(RestConsumerApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.revature.util.LoggingAspect] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ef5c174]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: JoinPoint
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: JoinPoint
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 29 common frames omitted
+16:08:57.116 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+16:08:57.116 [restartedMain] INFO  com.revature.RestConsumerApplication - Starting RestConsumerApplication using Java 17.0.2 on Snoss with PID 22236 (C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint\target\classes started by admin in C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint)
+16:08:57.118 [restartedMain] INFO  com.revature.RestConsumerApplication - No active profile set, falling back to 1 default profile: "default"
+16:08:57.149 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:08:57.149 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:08:57.738 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4e9666a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:08:57.761 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+16:08:57.994 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 6060 (http)
+16:08:58.000 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6060"]
+16:08:58.000 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:08:58.000 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16:08:58.058 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:08:58.058 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 909 ms
+16:08:58.391 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://service.revature.com/}AccountServiceService from WSDL: http://localhost:7070/soap-service/account-service?wsdl
+16:08:58.790 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+16:08:58.800 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6060"]
+16:08:58.814 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 6060 (http) with context path ''
+16:08:58.821 [restartedMain] INFO  com.revature.RestConsumerApplication - Started RestConsumerApplication in 1.922 seconds (JVM running for 2.51)
+16:09:07.877 [http-nio-6060-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:09:07.877 [http-nio-6060-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:09:07.877 [http-nio-6060-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+16:09:37.867 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:09:46.183 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+16:09:46.183 [restartedMain] INFO  com.revature.RestConsumerApplication - Starting RestConsumerApplication using Java 17.0.2 on Snoss with PID 14168 (C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint\target\classes started by admin in C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint)
+16:09:46.185 [restartedMain] INFO  com.revature.RestConsumerApplication - No active profile set, falling back to 1 default profile: "default"
+16:09:46.214 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:09:46.214 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:09:46.791 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$84a9d8d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:09:46.813 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+16:09:47.054 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 6060 (http)
+16:09:47.061 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6060"]
+16:09:47.061 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:09:47.061 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16:09:47.124 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:09:47.124 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 909 ms
+16:09:47.466 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://service.revature.com/}AccountServiceService from WSDL: http://localhost:7070/soap-service/account-service?wsdl
+16:09:47.885 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+16:09:47.896 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6060"]
+16:09:47.911 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 6060 (http) with context path ''
+16:09:47.919 [restartedMain] INFO  com.revature.RestConsumerApplication - Started RestConsumerApplication in 1.969 seconds (JVM running for 2.57)
+16:10:30.465 [http-nio-6060-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:10:30.465 [http-nio-6060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:10:30.466 [http-nio-6060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:28:53.432 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:28:55.264 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+16:28:55.266 [restartedMain] INFO  com.revature.RestConsumerApplication - Starting RestConsumerApplication using Java 17.0.2 on Snoss with PID 21732 (C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint\target\classes started by admin in C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint)
+16:28:55.266 [restartedMain] INFO  com.revature.RestConsumerApplication - No active profile set, falling back to 1 default profile: "default"
+16:28:55.296 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:28:55.297 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:28:55.900 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c722d213] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:28:55.923 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+16:28:56.166 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 6060 (http)
+16:28:56.173 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6060"]
+16:28:56.173 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:28:56.173 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16:28:56.232 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:28:56.232 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 935 ms
+16:28:56.565 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://service.revature.com/}AccountServiceService from WSDL: http://localhost:7070/soap-service/account-service?wsdl
+16:28:57.000 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+16:28:57.009 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6060"]
+16:28:57.024 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 6060 (http) with context path ''
+16:28:57.031 [restartedMain] INFO  com.revature.RestConsumerApplication - Started RestConsumerApplication in 1.99 seconds (JVM running for 2.589)
+16:29:02.478 [http-nio-6060-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:29:02.478 [http-nio-6060-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:29:02.479 [http-nio-6060-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+16:29:02.501 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - using around advice (before) for the service layer methods
+16:29:02.502 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - Logging using Spring AOP. The method targeted is: isAvailableByCampsiteID
+16:29:02.505 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - using around advice (before) for the service layer methods
+16:29:02.505 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - Logging using Spring AOP. The method targeted is: campsiteAvail
+16:29:02.565 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - Logging after the campsiteAvail method has returned [Reservation [reservationId=8, accountId=22, campsiteId=6, arrivalDate=1012022, departureDate=1022022]]
+16:29:02.565 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - Logging after: campsiteAvail
+16:29:02.565 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - using around advice (after) for the service layer methods
+16:29:02.565 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - using around advice (before) for the service layer methods
+16:29:02.566 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - Logging using Spring AOP. The method targeted is: getCampsiteName
+16:29:03.034 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - Logging after the getCampsiteName method has returned Garnier
+16:29:03.034 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - Logging after: getCampsiteName
+16:29:03.034 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - using around advice (after) for the service layer methods
+16:29:03.034 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - Logging after the isAvailableByCampsiteID method has returned Garnier is unavailable from 1012022 to 1022022
+
+16:29:03.034 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - Logging after: isAvailableByCampsiteID
+16:29:03.034 [http-nio-6060-exec-2] INFO  com.revature.util.LoggingAspect - using around advice (after) for the service layer methods
+16:53:02.133 [RMI TCP Connection(32)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:53:05.524 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+16:53:05.525 [restartedMain] INFO  com.revature.RestConsumerApplication - Starting RestConsumerApplication using Java 17.0.2 on Snoss with PID 636 (C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint\target\classes started by admin in C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint)
+16:53:05.526 [restartedMain] INFO  com.revature.RestConsumerApplication - No active profile set, falling back to 1 default profile: "default"
+16:53:05.559 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:53:05.559 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:53:06.140 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$58bb76d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:53:06.163 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+16:53:06.396 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 6060 (http)
+16:53:06.402 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6060"]
+16:53:06.402 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:53:06.402 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16:53:06.461 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:53:06.461 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 902 ms
+16:53:06.800 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://service.revature.com/}AccountServiceService from WSDL: http://localhost:7070/soap-service/account-service?wsdl
+16:53:07.233 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+16:53:07.243 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6060"]
+16:53:07.257 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 6060 (http) with context path ''
+16:53:07.272 [restartedMain] INFO  com.revature.RestConsumerApplication - Started RestConsumerApplication in 1.97 seconds (JVM running for 2.573)
+16:53:18.357 [http-nio-6060-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:53:18.357 [http-nio-6060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:53:18.357 [http-nio-6060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+16:53:18.375 [http-nio-6060-exec-1] INFO  com.revature.util.LoggingAspect - ControllergetAll was called.
+16:53:18.884 [http-nio-6060-exec-1] INFO  com.revature.util.LoggingAspect - getAll method returned [Lcom.revature.models.Campsite;@571bc273
+16:53:18.884 [http-nio-6060-exec-1] INFO  com.revature.util.LoggingAspect - Logging after: getAll
+17:51:35.482 [http-nio-6060-exec-4] INFO  com.revature.util.LoggingAspect - ControllergetUnit was called.
+17:51:35.537 [http-nio-6060-exec-4] INFO  com.revature.util.LoggingAspect - getUnit method returned null
+17:51:35.538 [http-nio-6060-exec-4] INFO  com.revature.util.LoggingAspect - Logging after: getUnit
+17:51:38.304 [http-nio-6060-exec-6] INFO  com.revature.util.LoggingAspect - Controllersave was called.
+17:51:38.304 [http-nio-6060-exec-6] INFO  com.revature.util.LoggingAspect - ControllergetCampsite was called.
+17:51:38.712 [http-nio-6060-exec-6] INFO  com.revature.util.LoggingAspect - getCampsite method returned Campsite [id=6, name=Garnier, location=Spillway]
+17:51:38.712 [http-nio-6060-exec-6] INFO  com.revature.util.LoggingAspect - Logging after: getCampsite
+17:51:38.724 [http-nio-6060-exec-6] INFO  com.revature.util.LoggingAspect - save method returned {"reservationId":8,"accountId":22,"campsiteId":6,"arrivalDate":1012022,"departureDate":1022022}
+17:51:38.724 [http-nio-6060-exec-6] INFO  com.revature.util.LoggingAspect - Logging after: save
+17:52:39.933 [RMI TCP Connection(69)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+17:52:43.869 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+17:52:43.870 [restartedMain] INFO  com.revature.RestConsumerApplication - Starting RestConsumerApplication using Java 17.0.2 on Snoss with PID 11524 (C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint\target\classes started by admin in C:\Users\admin\Desktop\revature\Java\CampsiteAvailabilityEndpoint)
+17:52:43.871 [restartedMain] INFO  com.revature.RestConsumerApplication - No active profile set, falling back to 1 default profile: "default"
+17:52:43.900 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:52:43.900 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:52:44.480 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$69a6daf1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:52:44.503 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+17:52:44.734 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 6060 (http)
+17:52:44.741 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6060"]
+17:52:44.741 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:52:44.741 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+17:52:44.804 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:52:44.804 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 904 ms
+17:52:45.270 [restartedMain] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://service.revature.com/}AccountServiceService from WSDL: http://localhost:7070/soap-service/account-service?wsdl
+17:52:45.709 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+17:52:45.719 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6060"]
+17:52:45.734 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 6060 (http) with context path ''
+17:52:45.741 [restartedMain] INFO  com.revature.RestConsumerApplication - Started RestConsumerApplication in 2.104 seconds (JVM running for 2.707)
+17:52:53.609 [http-nio-6060-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:52:53.609 [http-nio-6060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:52:53.609 [http-nio-6060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+17:52:53.631 [http-nio-6060-exec-1] INFO  com.revature.util.LoggingAspect - Controller campsiteAvailByDate was called.
+17:52:53.884 [http-nio-6060-exec-1] INFO  com.revature.util.LoggingAspect - campsiteAvailByDate method returned [Reservation [reservationId=8, accountId=22, campsiteId=6, arrivalDate=1012022, departureDate=1022022]]
+17:52:53.884 [http-nio-6060-exec-1] INFO  com.revature.util.LoggingAspect - Logging after: campsiteAvailByDate
+17:52:59.732 [http-nio-6060-exec-3] INFO  com.revature.util.LoggingAspect - Controller update was called.
+17:53:00.168 [http-nio-6060-exec-3] INFO  com.revature.util.LoggingAspect - update method returned {"id":13,"name":"Rag","location":"Corner"}
+17:53:00.168 [http-nio-6060-exec-3] INFO  com.revature.util.LoggingAspect - Logging after: update

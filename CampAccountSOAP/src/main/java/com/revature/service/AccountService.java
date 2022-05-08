@@ -17,14 +17,12 @@ public class AccountService {
 
 	@WebMethod
 	public Account findAccountById(Long id) {
-		for(Account account: this.accountRepo.findAll()) {
-			if(account.getId() == id) {
+		for (Account account : this.accountRepo.findAll()) {
+			if (account.getId() == id) {
 				return account;
 			}
 		}
 		return null;
-		
-		
 	}
 
 	@WebMethod

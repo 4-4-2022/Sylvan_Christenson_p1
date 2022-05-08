@@ -20,8 +20,19 @@ public class CampsiteController {
 	@Autowired
 	private RestTemplate restTemplate;
 
+	@GetMapping("/campsitename")
+	public String getCampsiteName(@PathParam(value = "id") long id) {
+
+		if (getCampsite(id) == null) {
+			return "Unregistered Campsite";
+		} else {
+
+			return getCampsite(id).getName();
+		}
+	}
+
 	@GetMapping("/campsites")
-	public Campsite getUnit(@PathParam(value = "id") long id) {
+	public Campsite getCampsite(@PathParam(value = "id") long id) {
 
 		ResponseEntity<Campsite> campsite = restTemplate.getForEntity("http://localhost:8080/campsites/" + id,
 				Campsite.class);
@@ -36,19 +47,25 @@ public class CampsiteController {
 		Campsite[] employees = response.getBody();
 		return employees;
 	}
+
 	@PostMapping("/campsites/save")
 	public String save(@RequestBody Campsite campsite) {
-		ResponseEntity<String> response = restTemplate.postForEntity("http://localhost:8080/campsites/save", campsite, String.class);
+		ResponseEntity<String> response = restTemplate.postForEntity("http://localhost:8080/campsites/save", campsite,
+				String.class);
 		return response.getBody();
 	}
+
 	@PostMapping("/campsites/update")
-	public String update(@PathParam(value = "id")long id, @RequestBody Campsite campsite) {
-		ResponseEntity<String> response = restTemplate.postForEntity("http://localhost:8080/campsites/update/" + id, campsite, String.class);
+	public String update(@PathParam(value = "id") long id, @RequestBody Campsite campsite) {
+		ResponseEntity<String> response = restTemplate.postForEntity("http://localhost:8080/campsites/update/" + id,
+				campsite, String.class);
 		return response.getBody();
 	}
+
 	@PostMapping("/campsites/delete")
-	public String delete(@PathParam(value = "id")long id) {
-		ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:8080/campsites/delete/" + id, String.class);
+	public String delete(@PathParam(value = "id") long id) {
+		ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:8080/campsites/delete/" + id,
+				String.class);
 		return response.getBody();
 	}
 
