@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.revature.entities.Campsite;
 import com.revature.repository.CampsiteRepository;
-import com.revature.repository.DummyData;
+
 
 @Service
 public class CampsiteService {

@@ -2,7 +2,7 @@
 Campsite Availability REST API
 ==============================
 
-This API is setup to handle the creation and management of
+This API is set up to handle the creation and management of
 ----------------------------------------------------------
 **-Campsites**
     
