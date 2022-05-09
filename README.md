@@ -1,5 +1,5 @@
 
-Campsite Availability REST API
+(CAMP) Campsite Availability Management Platform
 ==============================
 
 This API is set up to handle the creation and management of
